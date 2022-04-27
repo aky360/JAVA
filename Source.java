@@ -42,7 +42,15 @@ class Validator {
         else{
             return "comment is not spam";
         }
-        
+    }
+    
+    String commentTheString(String comment){
+        try{
+            
+        }
+        catch(){
+            checkComment(comment);
+        }
     }
 }
 
@@ -52,7 +60,7 @@ class SpamCommentException extends Exception {
 }
 
 
-public class Main {
+public class Source {
     public static void main(String[] args) throws Exception{
         
     }
