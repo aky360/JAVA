@@ -36,10 +36,12 @@ class Validator {
         if(count > 2){
             throw new SpamCommentException("account ban due to spam comment");
         }
-        else{
-            throw new SpamCommentException("account ban due to spam comment");
+        else if(count > 0 && count <= 2){
+            throw new SpamCommentException("spam comment");
         }
-        
+        else{
+            return "comment is not spam";
+        }
         
     }
 }
