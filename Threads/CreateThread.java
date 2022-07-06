@@ -28,3 +28,26 @@ public class CreateThread implements Runnable{
         //System.out.println("Hello, World!"); 
     }
 }
+
+
+
+//=====================================================================================================================
+import java.lang.Thread;
+public class CreateThread extends Thread{
+    public void run(){
+        System.out.println("the thread is running ");
+    }
+    public static void main(String[] args) {
+        Thread obj = new Thread(new CreateThread());
+        CreateThread obj1 = new CreateThread();
+        obj.run();
+        obj.start();
+        System.out.println();
+        obj1.run();
+        obj1.start();
+        System.out.println(obj.getName());
+        System.out.println(obj1.getName());
+    }
+}
+
+//
