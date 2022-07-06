@@ -49,5 +49,21 @@ public class CreateThread extends Thread{
         System.out.println(obj1.getName());
     }
 }
-
-//
+//==========================================================================================================================
+import java.lang.Thread;
+public class CreateThread implements Runnable{
+    public void run(){
+        System.out.println("the thread is running ");
+    }
+    public static void main(String[] args) {
+        Thread t = new Thread(new CreateThread());
+        CreateThread t1 = new CreateThread();
+        t.start();
+        t.run();
+        System.out.println(); 
+        //t1.start();  not working error
+        t1.run();
+        System.out.println(t.getName());
+        //System.out.println(t1.getName());   not working error
+    }
+}
