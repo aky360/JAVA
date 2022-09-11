@@ -9,8 +9,11 @@
          
 ******  Check whether a character is Lowercase/UpperCase or not in Java
     
-      Character.isLowerCase(input_val)
-      Character.isUpperCase(input_val)
+      Character.isLowerCase(char_input_val)
+      Character.isUpperCase(char_input_val)
+      
+      Character.toLowerCase(char_input_val);  
+      Character.toUpperCase(char_input_val); 
       
       
      String str = "aljfahf ";
@@ -30,3 +33,26 @@
         
         String txt = "Hello World";
         System.out.println(txt.toUpperCase());
+
+******
+
+      str.toLowerCase();
+      str.toUpperCase();
+      
+      //check all char in String is lower case/Upper case
+      String str = "lowercasestring";
+      System.out.println(str.toLowerCase().equals(str));     // true
+      
+      String str = "UPPERCASE CHARACTER";
+      System.out.println(str.toUpperCase().equals(str));     // true
+      
+      String str = "lowercasestringF";
+      System.out.println(str.toLowerCase().equals(str));     // false
+      
+      String str = "UPPERCASE CHARACTERs";
+      System.out.println(str.toUpperCase().equals(str));     // false
+      
+******
+
+     //convert String to char array
+    char[] charArray = str.toCharArray();
