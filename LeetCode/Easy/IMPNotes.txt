@@ -1,0 +1,32 @@
+     
+****** check the my_input is alphabet or not. 
+     
+     if( (my_input >= 'a' && my_input <= 'z') || (my_input >= 'A' && my_input <= 'Z'))
+         System.out.println("The character " +my_input + " is an alphabet");
+      else
+         System.out.println("The character " +my_input + " is not an alphabet");
+         
+         
+******  Check whether a character is Lowercase/UpperCase or not in Java
+    
+      Character.isLowerCase(input_val)
+      Character.isUpperCase(input_val)
+      
+      
+     String str = "aljfahf ";
+     str.length();
+
+******
+
+        System.out.println('a' - '0');  97-48
+        System.out.println('1' - '0');  49-48
+        System.out.println('0' - '0');  48-48
+        
+        
+******
+
+        String str = "ABcDefGH";
+        String result = str.toLowerCase();
+        
+        String txt = "Hello World";
+        System.out.println(txt.toUpperCase());
