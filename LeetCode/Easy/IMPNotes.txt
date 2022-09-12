@@ -56,3 +56,6 @@
 
      //convert String to char array
     char[] charArray = str.toCharArray();
+    
+******
+     string = string.replaceAll("[^a-zA-Z0-9]", "");  // removes all non-alphanumeric characters (like : , _ etc) from string
