@@ -33,3 +33,34 @@ class HelloWorld {
         return max;
     }
 }
+
+
+//===================================================================================================================
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        HelloWorld obj = new HelloWorld();
+        System.out.println("Hello, World!"+obj.mySqrt(100));
+    }
+    
+    public int mySqrt(int x) {
+        int left=1,right =x, result=0;
+        System.out.println("left " +left+ "right "+right+ "result "+result);
+        
+        while(left<right){
+            System.out.println("left "+left+" right "+right);
+            int mid = left + (right - left)/2;
+            System.out.println("mid "+mid);
+            if(mid<x/mid){
+                left = mid+1;
+                System.out.println("left "+left);
+            }else{
+                right = mid;
+                System.out.println("right "+right);
+            }
+        }
+        return (left==x/left)?left:left-1;
+    }
+}
