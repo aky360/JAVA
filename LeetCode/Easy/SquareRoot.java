@@ -42,7 +42,6 @@ class Solution {
     }
     
     // ANOTHER WAY TO FIND THE SQUAREROOT OF INTEGER VALUE IS GIVEN
-    
     public int mySqrt(int x) {
 
         if(x==0) return 0;
