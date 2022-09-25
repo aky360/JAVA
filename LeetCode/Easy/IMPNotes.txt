@@ -59,3 +59,22 @@
     
 ******
      string = string.replaceAll("[^a-zA-Z0-9]", "");  // removes all non-alphanumeric characters (like : , _ etc) from string
+     
+******
+          String str = "ab#c";
+          char ch[] = str.toCharArray();
+          for(char c : ch){
+               System.out.println(c);
+          }
+          
+******
+          String str = "ab#c";
+          String str1 = "ab#c";
+          System.out.println(str.equals(str1));
+          
+******    
+          str.deleteCharAt(index);
+          
+******
+
+     
