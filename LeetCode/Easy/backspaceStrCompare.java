@@ -1,3 +1,7 @@
+/*
+844. Backspace String Compare
+*/
+
 class Solution {
     public boolean backspaceCompare(String s, String t) {
         return stringCompare(s).equals(stringCompare(t));
