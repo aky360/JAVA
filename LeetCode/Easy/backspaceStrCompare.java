@@ -12,7 +12,7 @@ class Solution {
             if(c != '#'){
                 str.append(c);
             }else if(str.length() != 0){
-                str.deleteCharAt(str.length()-1);
+                str.deleteCharAt(str.length()-1);           // O(1)
             }
         }
         return str.toString();
