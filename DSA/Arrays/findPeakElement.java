@@ -5,7 +5,7 @@ class Solution{
 	
 	public static int findMax(int a, int b){
         int max = (a>b) ? a : b;
-        return max;
+        return max; 
     }
 	
 	public int peakElement(int[] arr,int n){
