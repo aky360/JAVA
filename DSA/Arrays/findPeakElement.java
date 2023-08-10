@@ -2,13 +2,12 @@ class Solution{
 	// Function to find the peak element
 	// arr[]: input array
 	// n: size of array a[]
-	
-	public static int findMax(int a, int b){
+  public static int findMax(int a, int b){
     int max = (a>b) ? a : b;
     return max;
   }
 	
-	public int peakElement(int[] arr,int n){
+  public int peakElement(int[] arr,int n){
     //add code here.
     if(n == 1) return 0;                             // if arr has only one element
     if(arr[0] >= arr[1]) return 0;                   // for first greater element
