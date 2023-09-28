@@ -1,3 +1,12 @@
+/*
+int n = 34325;
+StringBuffer str = new StringBuffer();
+StringBuffer str = new StringBuffer(Integer.toString(n));
+String.valueOf(n);
+Integer.toString(n);
+str.toString();
+Integer.parseInt(str.toString());
+*/
 
 class ReplaceNums {
     public static void main(String[] args) {
