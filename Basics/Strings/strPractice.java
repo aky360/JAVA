@@ -1,14 +1,17 @@
-
 import java.io.*;
 import java.util.*;
 
 class Solution {
     public static void main(String[] args) {
+        char ch = 'A'+32;
+        char Ch = 'Z'-'X'+'A';
+        System.out.println(Ch);
         System.out.println("this"+(char)65);
         //String str = "strings";
         String myString = "foobar";
         if (myString.contains("o")) {
             System.out.println("yes contais !");
+    // Do something.
         }
         StringBuffer t=new StringBuffer();
         
