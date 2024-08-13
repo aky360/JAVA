@@ -58,5 +58,3 @@ public static void main(String[] args)
 	System.out.println(q.deQueue());
 } 
 } 
-
-// This code is contributed by Prerna Saini
