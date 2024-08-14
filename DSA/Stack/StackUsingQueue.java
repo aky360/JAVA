@@ -5,7 +5,6 @@ import java.util.*;
 class Solution {
 
     static class Stack {
-        // Two inbuilt queues
         static Queue<Integer> q1 = new LinkedList<Integer>();
         static Queue<Integer> q2 = new LinkedList<Integer>();
 
@@ -15,14 +14,11 @@ class Solution {
         static void push(int x){
             // Push x first in empty q2
             q2.add(x);
-
-            // Push all the remaining
-            // elements in q1 to q2.
+            // Push all the remaining elements in q1 to q2.
             while (!q1.isEmpty()) {
                 q2.add(q1.peek());
                 q1.remove();
             }
-
             // swap the names of two queues
             Queue<Integer> q = q1;
             q1 = q2;
@@ -30,7 +26,6 @@ class Solution {
         }
 
         static void pop(){
-
             // if no elements are there in q1
             if (q1.isEmpty())
                 return;
@@ -76,18 +71,15 @@ class Stack {
     void remove(){
         if (q1.isEmpty())
             return;
-
         // Leave one element in q1 and
         // push others in q2.
         while (q1.size() != 1) {
             q2.add(q1.peek());
             q1.remove();
         }
-
-        // Pop the only left element
-        // from q1
+        // Pop the only left element from q1
         q1.remove();
-
+        
         // swap the names of two queues
         Queue<Integer> q = q1;
         q1 = q2;
